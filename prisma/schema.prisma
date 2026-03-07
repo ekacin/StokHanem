@@ -1,0 +1,78 @@
+generator client {
+  provider = "prisma-client-js"
+}
+
+datasource db {
+  provider = "sqlite"
+  url      = env("DATABASE_URL")
+}
+
+model User {
+  id        String   @id @default(cuid())
+  email     String   @unique
+  password  String
+  name      String?
+  role      String   @default("USER")
+  createdAt DateTime @default(now())
+  updatedAt DateTime @updatedAt
+
+  stockLogs StockLog[]
+}
+
+
+model Product {
+  id        String   @id @default(cuid())
+  barcode   String   @unique
+  name      String
+  brand     String?
+  imageUrl  String?
+  category  String?
+  createdAt DateTime @default(now())
+  updatedAt DateTime @updatedAt
+
+  stocks Stock[]
+  stockLogs StockLog[]
+}
+
+model Stock {
+  id             String   @id @default(cuid())
+  productId      String   @unique
+  quantity       Int      @default(0)
+  unit           String   @default("adet")
+  location       String?
+  alertThreshold Int      @default(5)
+  notes          String?
+  createdAt      DateTime @default(now())
+  updatedAt      DateTime @updatedAt
+
+  product Product @relation(fields: [productId], references: [id], onDelete: Cascade)
+  alerts  Alert[]
+}
+
+model StockLog {
+  id        String   @id @default(cuid())
+  productId String
+  userId    String
+  type      String   // "INCREASE" or "DECREASE"
+  amount    Int
+  prevQty   Int
+  newQty    Int
+  createdAt DateTime @default(now())
+
+  product Product @relation(fields: [productId], references: [id], onDelete: Cascade)
+  user    User    @relation(fields: [userId], references: [id], onDelete: Cascade)
+}
+
+
+model Alert {
+  id        String    @id @default(cuid())
+  stockId   String
+  type      String    @default("LOW_STOCK")
+  message   String
+  resolved  Boolean   @default(false)
+  createdAt DateTime  @default(now())
+  resolvedAt DateTime?
+
+  stock Stock @relation(fields: [stockId], references: [id], onDelete: Cascade)
+}
+
