@@ -32,6 +32,9 @@ StokHanem, pahalı ve sabit barkod okuyucu sistemlerine alternatif olarak geliş
 **Kurulum**
 
 ```bash
+git clone https://github.com/ekacin/StokHanem.git
+cd StokHanem
+
 # Bağımlılıkları yükleyin
 npm install
 
@@ -85,6 +88,9 @@ StokHanem is an open-source inventory management application developed as an alt
 **Setup**
 
 ```bash
+git clone https://github.com/ekacin/StokHanem.git
+cd StokHanem
+
 # Install dependencies
 npm install
 
