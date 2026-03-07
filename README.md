@@ -6,7 +6,8 @@
 
 Fotoğraflar / Screnshot
 <img width="1919" height="1017" alt="Image" src="https://github.com/user-attachments/assets/e9ff5019-c773-4da5-97c0-1d7180c26ee6" />
-<img width="1919" height="1018" alt="Image" src="https://github.com/user-attachments/assets/7d7beab6-4439-4e94-8a39-33a31c0ee777" />
+                                                                                                                                                                   <img width="1919" height="1018" alt="Image" src="https://github.com/user-attachments/assets/7d7beab6-4439-4e94-8a39-33a31c0ee777" />
+
 <img width="1919" height="1016" alt="Image" src="https://github.com/user-attachments/assets/3363276f-1c0e-4d15-8f66-6a835e8e62a2" />
 <img width="1919" height="1014" alt="Image" src="https://github.com/user-attachments/assets/874da8c6-121b-4087-bdfd-f79c3be13928" />
 <img width="1919" height="1016" alt="Image" src="https://github.com/user-attachments/assets/fe0b380a-593b-4155-9fc3-7df487ae84f8" />
