@@ -1,4 +1,4 @@
-# StokHanem (v2) - Envanter Yönetim Sistemi / Inventory Management System
+# StokHanem - Envanter Yönetim Sistemi / Inventory Management System
 
 [TR] **StokHanem**, küçük ve orta ölçekli operasyonlar için geliştirilmiş, hız ve verimlilik odaklı bir stok yönetim çözümüdür. Modern web teknolojileri ile inşa edilen sistem, barkod tarama desteği ve anlık analitik verileriyle envanter takibini dijitalize eder.
 
