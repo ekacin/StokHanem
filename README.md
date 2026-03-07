@@ -40,6 +40,7 @@ cd StokHanem
 npm install
 
 # .env dosyasını yapılandırın (DATABASE_URL, NEXTAUTH_SECRET)
+copy .env.example .env
 
 # Veritabanı şemasını oluşturun
 npx prisma db push
@@ -53,8 +54,8 @@ npm run dev
 
 **Demo Hesap Bilgileri**
 
-Email: demo@stok.app
-Şifre: demo123
+Email: admin@stok.app
+Şifre: admin123
 
 **Notlar**
 
@@ -97,6 +98,7 @@ cd StokHanem
 npm install
 
 # Configure the .env file (DATABASE_URL, NEXTAUTH_SECRET)
+copy .env.example .env
 
 # Push database schema
 npx prisma db push
@@ -110,8 +112,8 @@ npm run dev
 
 **Demo Account**
 
-Email: demo@stok.app
-Password: demo123
+Email: admin@stok.app
+Password: admin123
 
 **Notes**
 
