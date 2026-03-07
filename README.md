@@ -9,8 +9,7 @@ StokHanem, pahalı ve sabit barkod okuyucu sistemlerine alternatif olarak geliş
 
 **Özellikler**
 
--Barkod okutarak ürün ekleme
--Open Food Facts API ile ürün bilgilerini otomatik çekme
+-Barkod okutarak ürün ekleme                                                                                                                                       -Open Food Facts API ile ürün bilgilerini otomatik çekme
 -Eğer API çalışmaz veya ürün API üzerinden bulunmazsa manuel giriş yapabilme
 -Excel veya CSV formatında stok verilerini içe ve dışa aktarım
 -Tüm stok hareketleri için detaylı log sistemi (kim, ne zaman, ne kadar değiştirdi)
