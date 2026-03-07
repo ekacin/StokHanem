@@ -9,34 +9,25 @@ StokHanem, pahalı ve sabit barkod okuyucu sistemlerine alternatif olarak geliş
 
 **Özellikler**
 
--Barkod okutarak ürün ekleme
-
--Open Food Facts API ile ürün bilgilerini otomatik çekme
-
--Eğer API çalışmaz veya ürün API üzerinden bulunmazsa manuel giriş yapabilme
-
--Excel veya CSV formatında stok verilerini içe ve dışa aktarım
-
--Tüm stok hareketleri için detaylı log sistemi (kim, ne zaman, ne kadar değiştirdi)
-
--Düşük stok uyarıları ile kritik ürünleri takip etme
-
--Basit ve anlaşılır analiz ekranı
-
--Kullanıcı giriş sistemi ile güvenli oturum yönetimi
-
--Web tabanlı, responsive tasarım sayesinde PC, tablet ve telefonlarda çalışabilme
-
--Kolayca .exe veya .apk formatına dönüştürülebilir yapı
+- Barkod okutarak ürün ekleme
+- Open Food Facts API ile ürün bilgilerini otomatik çekme
+- Eğer API çalışmaz veya ürün API üzerinden bulunmazsa manuel giriş yapabilme
+- Excel veya CSV formatında stok verilerini içe ve dışa aktarım
+- Tüm stok hareketleri için detaylı log sistemi (kim, ne zaman, ne kadar değiştirdi)
+- Düşük stok uyarıları ile kritik ürünleri takip etme
+- Basit ve anlaşılır analiz ekranı
+- Kullanıcı giriş sistemi ile güvenli oturum yönetimi
+- Web tabanlı, responsive tasarım sayesinde PC, tablet ve telefonlarda çalışabilme
+- Kolayca .exe veya .apk formatına dönüştürülebilir yapı
 
 **Kullanılan Teknoloji**
 
--Framework: Next.js (App Router)
--Dil: TypeScript
--Veritabanı: SQLite & Prisma ORM
--Kimlik Doğrulama: NextAuth.js
--Stil: Özel CSS (Modüler & Responsive)
--Barkod Motoru: Zbar WASM
+- Framework: Next.js (App Router)
+- Dil: TypeScript
+- Veritabanı: SQLite & Prisma ORM
+- Kimlik Doğrulama: NextAuth.js
+- Stil: Özel CSS (Modüler & Responsive)
+- Barkod Motoru: Zbar WASM
 
 **Kurulum**
 
