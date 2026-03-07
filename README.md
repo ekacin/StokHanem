@@ -1,69 +1,109 @@
 # StokHanem - Envanter Yönetim Sistemi / Inventory Management System
 
-[TR] **StokHanem**, küçük ve orta ölçekli operasyonlar için geliştirilmiş, hız ve verimlilik odaklı bir stok yönetim çözümüdür. Modern web teknolojileri ile inşa edilen sistem, barkod tarama desteği ve anlık analitik verileriyle envanter takibini dijitalize eder.
+# VİDEO
+https://youtu.be/rpmi9HAsOiU
 
-[EN] **StokHanem** is a speed and efficiency-oriented inventory management solution developed for small to medium-sized operations. Built with modern web technologies, the system digitalizes inventory tracking with barcode scanning support and real-time analytical data.
+# Türkçe
 
-Fotoğraflar / Screnshot
-<img width="1919" height="1017" alt="Image" src="https://github.com/user-attachments/assets/e9ff5019-c773-4da5-97c0-1d7180c26ee6" />
-                                                                                                                                                                   <img width="1919" height="1018" alt="Image" src="https://github.com/user-attachments/assets/7d7beab6-4439-4e94-8a39-33a31c0ee777" />
+StokHanem, pahalı ve sabit barkod okuyucu sistemlerine alternatif olarak geliştirilmiş açık kaynaklı bir stok yönetim uygulamasıdır. Kamerası olan herhangi bir cihaz (PC, telefon, tablet) ile çalışabilir ve stok takibini hızlı bir şekilde yapmanı sağlar.
 
-<img width="1919" height="1016" alt="Image" src="https://github.com/user-attachments/assets/3363276f-1c0e-4d15-8f66-6a835e8e62a2" />
-<img width="1919" height="1014" alt="Image" src="https://github.com/user-attachments/assets/874da8c6-121b-4087-bdfd-f79c3be13928" />
-<img width="1919" height="1016" alt="Image" src="https://github.com/user-attachments/assets/fe0b380a-593b-4155-9fc3-7df487ae84f8" />
-<img width="1915" height="1015" alt="Image" src="https://github.com/user-attachments/assets/8bf8a208-ea2f-48e4-8737-2fe4c83c7246" />
-<img width="1919" height="1016" alt="Image" src="https://github.com/user-attachments/assets/381d8072-b676-4557-9f5a-4ae94bd9b455" />
-<img width="1919" height="1015" alt="Image" src="https://github.com/user-attachments/assets/5717b81e-a0be-4796-b8d1-82355cc3bbc4" />
+**Özellikler**
 
+-Barkod okutarak ürün ekleme
+-Open Food Facts API ile ürün bilgilerini otomatik çekme
+-Eğer API çalışmaz veya ürün API üzerinden bulunmazsa manuel giriş yapabilme
+-Excel veya CSV formatında stok verilerini içe ve dışa aktarım
+-Tüm stok hareketleri için detaylı log sistemi (kim, ne zaman, ne kadar değiştirdi)
+-Düşük stok uyarıları ile kritik ürünleri takip etme
+-Basit ve anlaşılır analiz ekranı
+-Kullanıcı giriş sistemi ile güvenli oturum yönetimi
+-Web tabanlı, responsive tasarım sayesinde PC, tablet ve telefonlarda çalışabilme
+-Kolayca .exe veya .apk formatına dönüştürülebilir yapı
 
- 🚀 Özellikler / Features
+**Kullanılan Teknoloji**
 
- [TR] Öne Çıkanlar
-- Akıllı Barkod Tarayıcı: Web tarayıcı üzerinden kamera erişimi ile anlık barkod ve QR kod okuma.
-- Kritik Stok Yönetimi: Belirlenen eşik değerinin altına düşen ürünler için otomatik uyarı sistemi.
-- Veri Analitiği: Stok hareketlerinin ve toplam envanter değerinin görselleştirildiği dashboard.
-- Esnek Veri Transferi: CSV formatında toplu ürün içe aktarma ve dışa aktarma yetenekleri.
-- Güvenli Erişim: Rol tabanlı yetkilendirme (Admin/Kullanıcı) ve session yönetimi.
+-Framework: Next.js (App Router)
+-Dil: TypeScript
+-Veritabanı: SQLite & Prisma ORM
+-Kimlik Doğrulama: NextAuth.js
+-Stil: Özel CSS (Modüler & Responsive)
+-Barkod Motoru: Zbar WASM
 
- [EN] Highlights
-- Smart Barcode Scanner: Real-time barcode and QR code scanning via web browser camera access.
-- Critical Stock Management: Automatic alert system for products falling below set threshold values.
-- Data Analytics: Dashboard visualizing stock movements and total inventory value.
-- Flexible Data Transfer: Bulk product import and export capabilities in CSV format.
-- Secure Access: Role-based authorization (Admin/User) and session management.
+**Kurulum**
 
+```bash
+# Bağımlılıkları yükleyin
+npm install
 
- 🛠️ Teknoloji Yığını / Tech Stack
+# .env dosyasını yapılandırın (DATABASE_URL, NEXTAUTH_SECRET)
 
-- Framework: Next.js (App Router)
-- Language: TypeScript
-- Database: SQLite & Prisma ORM
-- Auth: NextAuth.js
-- Styling: Custom CSS (Modular & Responsive)
-- Core Engine: Zbar WASM (Barcode Detection)
+# Veritabanı şemasını oluşturun
+npx prisma db push
 
+# Demo verilerini yükleyin
+npm run seed
 
- ⚙️ Kurulum / Setup
+# Geliştirme sunucusunu başlatın
+npm run dev
+```
 
- [TR] Adımlar
-1. Bağımlılıkları yükleyin: `npm install`
-2. `.env` dosyasını yapılandırın (DATABASE_URL, NEXTAUTH_SECRET).
-3. Veritabanı şemasını oluşturun: `npx prisma db push`
-4. Demo verilerini yükleyin: `npm run seed`
-5. Geliştirme sunucusunu başlatın: `npm run dev`
+**Demo Hesap Bilgileri**
 
- [EN] Steps
-1. Install dependencies: `npm install`
-2. Configure `.env` file (DATABASE_URL, NEXTAUTH_SECRET).
-3. Create database schema: `npx prisma db push`
-4. Load demo data: `npm run seed`
-5. Start development server: `npm run dev`
+Email: demo@stok.app
+Şifre: demo123
 
+**Notlar**
+Bu proje bir hobi projesi olarak geliştirilmiştir ve aktif geliştirme süreci bırakılmıştır. Ama proje tamamen çalışır durumdadır ve fikir paylaşımı amacıyla kullanılabilir. İsteyen alabilir, değiştirebilir veya kendi versiyonunu oluşturabilir.
 
- 🔐 Erişim / Credentials
-- Email: `admin@stok.app`
-- Password: `admin123`
+# English
 
- 📎 Notlar / Notes
-[TR] Bu proje bir hobi projesi olarak geliştirilmiştir ve aktif geliştirme süreci tamamlanmıştır.
-[EN] This project was developed as a hobby project and the active development process has been completed.
+StokHanem is an open-source inventory management application developed as an alternative to expensive and fixed barcode scanner systems. It works with any device that has a camera (PC, phone, tablet) and allows you to manage your inventory quickly and easily.  
+
+**Features**
+
+- Add products by scanning barcodes  
+- Automatically fetch product information using the Open Food Facts API  
+- Manual entry if the API doesn’t work or the product isn’t found  
+- Import and export inventory data in Excel or CSV format  
+- Detailed log system for all inventory movements (who, when, how much)  
+- Low stock alerts to track critical items  
+- Simple and clear analysis dashboard  
+- Secure login system for user authentication  
+- Web-based, responsive design works on PC, tablet, and phone  
+- Easily convertible to .exe or .apk formats  
+
+**Technologies Used**
+
+- Framework: Next.js (App Router)  
+- Language: TypeScript  
+- Database: SQLite & Prisma ORM  
+- Authentication: NextAuth.js  
+- Styling: Custom CSS (Modular & Responsive)  
+- Barcode Engine: Zbar WASM  
+
+**Setup**
+
+```bash
+# Install dependencies
+npm install
+
+# Configure the .env file (DATABASE_URL, NEXTAUTH_SECRET)
+
+# Push database schema
+npx prisma db push
+
+# Load demo data (adds sample products and test data)
+npm run seed
+
+# Start development server
+npm run dev
+```
+
+**Demo Account**
+
+Email: demo@stok.app
+Password: demo123
+
+**Notes**
+
+This project was developed as a hobby and is no longer actively maintained. It is fully functional and can be used to share ideas. Anyone can take it, modify it, or create their own version.
