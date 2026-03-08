@@ -1,8 +1,7 @@
 # StokHanem - Envanter Yönetim Sistemi / Inventory Management System
 
 # Video
-https://github.com/user-attachments/assets/7f5ce91d-b075-44a3-9722-ac5b8a8592b8
-https://github.com/user-attachments/assets/8c20b4ae-1a1b-43b0-b885-ed3e95f1a12b
+https://github.com/user-attachments/assets/7f5ce91d-b075-44a3-9722-ac5b8a8592b8                                                                                    https://github.com/user-attachments/assets/8c20b4ae-1a1b-43b0-b885-ed3e95f1a12b
 
 # Türkçe
 
