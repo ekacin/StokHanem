@@ -59,10 +59,6 @@ npm run dev
 Email: admin@stok.app
 Şifre: admin123
 
-**Notlar**
-
-Bu proje bir hobi projesi olarak geliştirilmiştir ve aktif geliştirme süreci bırakılmıştır. Ama proje tamamen çalışır durumdadır ve fikir paylaşımı amacıyla kullanılabilir. İsteyen alabilir, değiştirebilir veya kendi versiyonunu oluşturabilir.
-
 # English
 
 StokHanem is an open-source inventory management application developed as an alternative to expensive and fixed barcode scanner systems. It works with any device that has a camera (PC, phone, tablet) and allows you to manage your inventory quickly and easily.  
@@ -116,7 +112,3 @@ npm run dev
 
 Email: admin@stok.app
 Password: admin123
-
-**Notes**
-
-This project was developed as a hobby and is no longer actively maintained. It is fully functional and can be used to share ideas. Anyone can take it, modify it, or create their own version.
